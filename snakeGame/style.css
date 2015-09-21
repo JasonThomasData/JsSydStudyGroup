@@ -1,0 +1,25 @@
+#allContent{
+	position:relative;
+}
+
+#gameGrid{
+	margin: 0 auto;
+	display: block;
+	position:relative;
+}
+
+#gameGrid div{
+	border: 2px solid #fff;
+	background-color: #EFEFEF;
+	position:absolute;
+}
+
+#buttonBox{
+	width: 275px;
+	margin: 0 auto;
+	position:relative;
+}
+
+.topButtons{
+	display:inline-block;
+}

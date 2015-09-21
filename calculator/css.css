@@ -1,0 +1,44 @@
+@font-face {
+    font-family: calcFont;
+    src: url(../commonCSS/digital-7.ttf);
+}
+
+body{
+	font-family: calcFont;
+}
+
+#calculator{
+	width: 240px;
+	padding: 10px;
+	margin: 0 auto;
+	display: block;
+	position:relative;
+	border: 1px solid #000;
+}
+#previousResult{
+	height:20px;
+	color: gray;
+}
+#displayResult{
+	height:35px;
+	font-size: 26px;
+	text-align:right;
+	padding-top:5px;
+	padding-right:5px;
+}
+#buttons{
+	width:90%;
+	margin: 0 auto;
+	font-size: 24px;
+	//display:block;
+}
+#buttons td{
+	width:25%;
+	padding:7.5%;
+	text-align:center;
+	background-color:gray;
+	font-weight:bold;
+}
+.widerCell{
+	background-color:orange;
+}

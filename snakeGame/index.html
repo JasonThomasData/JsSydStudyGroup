@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>title</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="../commonJS/jquery-2.1.4.min.js"></script>
+    </head>
+    <body>
+        <div id="allContent">
+            <div id='buttonBox'>
+                <select class='topButtons' id ="gridNumber" name="gridNumber">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option selected="selected" value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+                <select class='topButtons' id ="gameSpeed" name="gridNumber">
+                    <option value="50">Fastest (50 ms)</option>
+                    <option value="100">Fast (100 ms)</option>
+                    <option selected="selected" value="250">Normal (250 ms)</option>
+                    <option value="500">Slow (500)</option>
+                </select>
+                <button class='topButtons' id='startButton'>Start game</button>
+                <p class='topButtons' id='pointsDisplay'></p>
+            </div>
+            <div id="gameGrid"></div>
+        </div>
+        <script src="main.js"></script>
+      </body>
+</html>
