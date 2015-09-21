@@ -157,7 +157,7 @@ $(document).ready(function(){
         function render_game_board(){
             snake.points = snake.points - 1;
             $('#gameGrid div').css('background-color', '#EFEFEF'); 
-            $('#pointsDisplay').text('Points = ' + snake.points.toString());
+            $('#pointsDisplay').html('Points = ' + snake.points);
             for (k=0;k<snake.loc.length;k++){
                 var snakeSquare = snake.loc[k][0].toString() + 'n' + snake.loc[k][1].toString();
                 $('#gameGrid #' + snakeSquare).css('background-color', gameSettings.snakeColor);  
