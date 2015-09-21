@@ -117,7 +117,7 @@ $(document).ready(function(){
             for (l=0; l < snake.targ.length; l++){
                 if (nextSquare[0] == snake.targ[l][0] && nextSquare[1] == snake.targ[l][1]){
                     //console.log('got point');
-                    snake.points = snake.points + gameSettings.squareNumber;
+                    snake.points = parseInt(snake.points) + parseInt(gameSettings.squareNumber);
                     return true;
                 }
             }
@@ -157,7 +157,7 @@ $(document).ready(function(){
         function render_game_board(){
             snake.points = snake.points - 1;
             $('#gameGrid div').css('background-color', '#EFEFEF'); 
-            $('#pointsDisplay').html('Points = ' + snake.points);
+            $('#pointsDisplay').html('Points = ' + parseInt(snake.points));
             for (k=0;k<snake.loc.length;k++){
                 var snakeSquare = snake.loc[k][0].toString() + 'n' + snake.loc[k][1].toString();
                 $('#gameGrid #' + snakeSquare).css('background-color', gameSettings.snakeColor);  
