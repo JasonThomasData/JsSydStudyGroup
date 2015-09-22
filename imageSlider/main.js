@@ -33,7 +33,6 @@ function _init_(i){
 	$('.button').on('click', function(){
 		clearInterval(interval)
 		i = $(this).index()
-		console.log(i)
 		changeContent(i)
 		_init_(i)
 	})
